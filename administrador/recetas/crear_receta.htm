@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="cont-menu">
+            <div class="imagen">
+                <img src="../../static/img/logotipo.png" alt="logotipo">
+            </div>
+            <ul class="menu">
+                <li><a href="../recetas.htm">Mis Recetas</a></li>
+                <li><a href="../../login.htm">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <div class="cont-anadir-rec">
+            <div class="titulo">
+                <h1>Crear Receta</h1>
+            </div>
+            <form action="anadir_producto.htm" class="formulario">
+                <div class="foto">
+                    <p>Añada una Foto</p>
+                    <input type="file" name="flImage">
+                </div>
+                <div class="titulo">
+                    <p>Titulo Receta</p>
+                    <input type="text" name="txtTitulo">
+                </div>
+                <div class="cant-persona">
+                    <p>Cantidad de Personas</p>
+                    <input type="text" name="txtCantidad">
+                </div>
+                <div class="tipo-receta">
+                    <p>Especifique Tipo de Receta</p>
+                    <select name="cboTipo">
+                        <option value="">Seleccionar</option>
+                    </select>
+                </div>
+                <div class="descripcion">
+                    <p>Descripción Receta</p>
+                    <textarea name="txtDecription" cols="50" rows="8"></textarea>
+                </div>
+                <div class="boton">
+                    <button>Crear Receta</button>
+                    <a href="../recetas.htm">Volver a Mis Recetas</a>
+                </div>
+            </form>
+            <div class="imagen">
+                <img src="../../static/img/logotipo.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

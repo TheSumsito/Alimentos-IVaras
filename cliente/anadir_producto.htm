@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="cont-menu">
+            <div class="imagen">
+                <img src="../static/img/logotipo.png" alt="logotipo">
+            </div>
+            <ul class="menu">
+                <li><a href="inventario/inventario.htm">Mi Inventario</a></li>
+                <li><a href="rec_favoritas.htm">Mis Recetas Favoritas</a></li>
+                <li><a href="../login.htm">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <div class="cont-anadir-prod">
+            <div class="titulo">
+                <h1>Añadir Productos</h1>
+            </div>
+            <form action="" class="formulario">
+                <div class="nombre">
+                    <p>Especifique su Nombre</p>
+                    <input type="text" name="txtNombre">
+                </div>
+                <div class="uni-medida">
+                    <div class="cantidad">
+                        <p>Cantidad</p>
+                        <input type="text" name="txtCantidad">
+                    </div>
+                    <div class="medida">
+                        <p>Medida</p>
+                        <select name="cboMedida">
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <div class="caloria">
+                        <p>Calorías</p>
+                        <input type="text" name="txtCaloria">
+                    </div>
+                    <div class="carbohidrato">
+                        <p>Carbohidratos</p>
+                        <input type="text" name="txtCarbohidratos">                    
+                    </div>
+                    <div class="proteina">
+                        <p>Proteínas</p>
+                        <input type="text" name="txtProteina">
+                    </div>
+                    <div class="grasa">
+                        <p>Grasas</p>
+                        <input type="text" name="txtGrasa">
+                    </div>
+                    <div class="colesterol">
+                        <p>Colesterol</p>
+                        <input type="text" name="txtColesterol">
+                    </div>
+                </div>
+                <div class="boton">
+                    <button>Añadir</button>
+                    <a href="utilizar-rec.htm">Volver a la Reserva</a>
+                </div>
+            </form>
+            <table class="listado">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Unidad Medida</th>
+                </tr>
+                <tr>
+                    <td>hola</td>
+                    <td>hola</td>
+                    <td><button id="btn-modificar">Modificar</button></td>
+                    <td><a href="">Eliminar</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

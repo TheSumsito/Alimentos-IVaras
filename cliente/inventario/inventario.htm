@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="cont-menu">
+            <div class="imagen">
+                <img src="../../static/img/logotipo.png" alt="logotipo">
+            </div>
+            <ul class="menu">
+                <li><a href="inventario.htm">Mi Inventario</a></li>
+                <li><a href="../rec_favoritas.htm">Mis Recetas Favoritas</a></li>
+                <li><a href="../../login.htm">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <div class="cont-inventario">
+            <div class="titulo">
+                <h1>Mi Despensa</h1>
+            </div>
+            <div class="boton">
+                <button id="btn-anadir">Añadir Producto</button>
+            </div>
+            <div class="anadir-producto" style="display: none;">
+                <div class="titulo">
+                    <h1>Añadir Productos</h1>
+                </div>
+                <form action="" class="formulario">
+                    <div class="nombre">
+                        <p>Especifique su Nombre</p>
+                        <input type="text" name="txtNombre">
+                    </div>
+                    <div class="uni-medida">
+                        <div class="cantidad">
+                            <p>Cantidad</p>
+                            <input type="text" name="txtCantidad">
+                        </div>
+                        <div class="medida">
+                            <p>Medida</p>
+                            <select name="cboMedida">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <button>Añadir</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mod-producto" style="display: none;">
+                <div class="titulo">
+                    <h1>Modificar Productos</h1>
+                </div>
+                <form action="" class="formulario">
+                    <div class="nombre">
+                        <p>Nombre</p>
+                        <input type="text" name="txtNombre">
+                    </div>
+                    <div class="uni-medida">
+                        <div class="cantidad">
+                            <p>Cantidad</p>
+                            <input type="text" name="txtCantidad">
+                        </div>
+                        <div class="medida">
+                            <p>Medida</p>
+                            <select name="cboMedida">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <button>Actualizar</button>
+                    </div>
+                </form>
+            </div>
+            <table class="table">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Unidad Medida</th>
+                </tr>
+                <tr>
+                    <td>hola</td>
+                    <td>hola</td>
+                    <td><button id="btn-modificar">Modificar</button></td>
+                    <td><a href="">Eliminar</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../../static/js/jquery-3.1.4.min.js"></script>
+    <script src="../../static/js/code.js"></script>
+</body>
+</html>

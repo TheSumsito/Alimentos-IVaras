@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="cont-menu">
+            <div class="imagen">
+                <img src="../static/img/logotipo.png" alt="logotipo">
+            </div>
+            <ul class="menu">
+                <li><a href="inventario/inventario.htm">Mi Inventario</a></li>
+                <li><a href="rec_favoritas.htm">Mis Recetas Favoritas</a></li>
+                <li><a href="../login.htm">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <div class="cont-ana-fav">
+            <div class="titulo">
+                <h1>Calcular Ingredientes</h1>
+            </div>
+            <form action="" class="calcular">
+                <div class="cantidad">
+                    <p>¿ Receta para Cuantas Personas ?</p>
+                    <input type="text" name="txtCantidad" id="txtCantidad">
+                    <button>Calcular</button>
+                </div>
+            </form>
+            <form action="rec_favoritas.htm" class="receta">
+                <div class="titulo">
+                    <h1>Ingredientes de la Receta</h1>
+                </div>
+                <table class="table-receta">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Calorías</th>
+                        <th>Carbohidratos</th>
+                    </tr>
+                    <tr>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                    </tr>
+                    <tr>
+                        <th style="border: none;"></th>
+                        <th>Proteínas</th>
+                        <th>Grasa</th>
+                        <th>Colesterol</th>
+                    </tr>
+                    <tr>
+                        <td style="border: none;"></td>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                    </tr>
+                </table>
+                <div class="producto">
+                    <div class="search">
+                        <p>Utilize Ingrediente</p>
+                        <select name="cboProducto">
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+                    <div class="boton">
+                        <a href="anadir_producto.htm">Agregar Producto</a>
+                    </div>
+                    <table class="table-producto">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>hola</td>
+                            <td>hola</td>
+                            <td><a href="">Modificar</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="boton">
+                    <button>Utilizar Receta</button>
+                    <a href="rec_favoritas.htm">Volver a las Recetas</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

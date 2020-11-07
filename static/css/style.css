@@ -1,0 +1,1836 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap';
+
+:root {
+    --background: #ECECEC;
+    --orange: #d06c3c;
+}
+
+body {
+    font-family: 'Roboto Condensed';
+    background-color: var(--background);
+}
+
+button, input, textarea {
+    font-family: 'Roboto Condensed';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0px 0px 30px 0px;
+}
+
+.container .cont-menu {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1.3px solid var(--orange);
+    background-color: white;
+}
+
+.container .cont-menu .imagen {
+    grid-column: 2/3;
+    margin: 10px;
+}
+
+.container .cont-menu .imagen img {
+    max-width: 100%;
+}
+
+.container .cont-menu .menu {
+    grid-column: 3/-1;
+    text-align: center;
+}
+
+
+.container .cont-menu .menu li {
+    display: inline;
+    position: relative;
+    top: 35px;
+    
+}
+
+
+.container .cont-menu .menu li a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+    color: var(--orange);
+}
+/*-------------------------------------------------------------*/
+/*--------- CAROUSEL -----------*/
+.container .cont-carousel {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-carousel .imagen {
+    grid-column: 1/-1;
+}
+
+.container .cont-carousel .imagen img {
+    max-width: 100% ;
+    opacity: .8;
+}
+
+.container .cont-carousel .texto {
+    grid-column: 3/6;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    border-bottom: 3px solid var(--orange);
+}
+
+.container .cont-carousel .texto h1 {
+    font-size: 50px;
+    color: var(--orange);
+    text-shadow: 0px 2px black;
+}
+/* ------------------------------------------------------ */
+/* ------------ RECOMENDADAS -------------------- */
+.container .cont-recomendado {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px;
+}
+
+.container .cont-recomendado .titulo h1 {
+    color: var(--orange);
+    font-size: 40px;
+}
+
+.container .cont-recomendado .row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 10px;
+}
+
+.container .cont-recomendado .row .tipo {
+    grid-column: 1/-1;
+    padding: 20px;
+}
+
+.container .cont-recomendado .row .tipo h1 {
+    color: var(--orange);
+}
+
+.container .cont-recomendado .row .imagen {
+    grid-column: 2/5;
+}
+
+.container .cont-recomendado .row .imagen img {
+    max-width: 100%;
+    border-radius: 30px;
+    opacity: .8;
+}
+
+.container .cont-recomendado .row .description {
+    grid-column: 5/8;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.container .cont-recomendado .row .description .titulo,
+.container .cont-recomendado .row .description .texto,
+.container .cont-recomendado .row .description .boton {
+    position: relative;
+    top: 70px;
+}
+
+.container .cont-recomendado .row .description .titulo h1 {
+    color: var(--orange);
+    font-size: 25px;
+}
+
+
+.container .cont-recomendado .row .description .texto p {
+    margin: 30px;
+    font-size: 18px;
+}
+
+.container .cont-recomendado .row .description .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.container .cont-recomendado .row .description .boton a {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+/* -------------------------------------------------------------- */
+
+/* ----------- RECETAS -------------- */
+.container .cont-recetas {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-recetas .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-recetas .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.container .cont-recetas .boton {
+    grid-column: 6/7;
+    text-align: center;
+}
+
+.container .cont-recetas .boton a {
+    color: white;
+    background-color: var(--orange);
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.container .cont-recetas .row {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container .cont-recetas .row .titulo {
+    padding: 30px 0px 10px 0px;
+    
+}
+
+.container .cont-recetas .row .titulo h1 {
+    color: var(--orange);
+    font-size: 30px;
+}
+
+.container .cont-recetas .row .imagen {
+    grid-column: 2/5;
+}
+
+.container .cont-recetas .row .imagen img {
+    max-width: 100%;
+    border-radius: 20px 0px 0px 20px;
+    opacity: .8;
+}
+
+.container .cont-recetas .row .description {
+    grid-column: 5/8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.container .cont-recetas .row .description .preparacion {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-recetas .row .description .preparacion .titulo {
+    grid-column: 1/-1;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-recetas .row .description .preparacion .titulo h1 {
+    color: black;
+}
+
+.container .cont-recetas .row .description .preparacion .descripcion {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    margin: 0px 40px 0px 40px;
+}
+
+.container .cont-recetas .row .description .boton {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+
+.container .cont-recetas .row .description .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.container .cont-recetas .row .description .boton a {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------ */
+
+/* ----------- LOGIN ---------------- */
+.container .cont-login {
+    grid-column: 1/-1;
+}
+
+.container .cont-login .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-login .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.container .cont-login .mensaje {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.container .cont-login .mensaje p {
+    font-size: 25px;
+}
+
+
+.container .cont-login .mensaje p span {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.container .cont-login .formulario {
+    text-align: center;
+}
+
+.container .cont-login .formulario .email,
+.container .cont-login .formulario .password {
+    margin: 10px 0px 20px 0px;
+}
+
+.container .cont-login .formulario .boton {
+    margin: 30px 0px 30px 0px;
+}
+
+.container .cont-login .formulario .boton button {
+    background-color: var(--orange);
+    color: white;
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.container .cont-login .formulario .email p,
+.container .cont-login .formulario .password p {
+    font-size: 18px;
+    padding: 0px 0px 10px 0px;
+}
+
+.container .cont-login .formulario .email input,
+.container .cont-login .formulario .password input {
+    font-size: 18px;
+    text-align: center;
+}
+
+.container .cont-login .btn-registro {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-login .btn-registro p {
+    font-size: 17px;
+}
+
+.container .cont-login .btn-registro p a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container .cont-login .imagen {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    background-color: white;
+    border-bottom: 2px solid var(--orange);
+    border-top: 2px solid var(--orange);
+}
+
+/* ------------------------------------------------------------- */
+
+.container .cont-registro {
+    grid-column: 1/-1;
+}
+
+.container .cont-registro .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-registro .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.container  .cont-registro .mensaje {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+
+.container .cont-registro .mensaje p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container .cont-registro .formulario {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container .cont-registro .formulario .nombre {
+    grid-column: 3/5;
+    padding: 0px 0px 20px 0px;
+}
+.container .cont-registro .formulario .apellido {
+    grid-column: 5/7;
+    padding: 0px 0px 20px 0px;
+}
+.container .cont-registro .formulario .email {
+    grid-column: 3/5;
+    padding: 0px 0px 20px 0px;
+}
+.container .cont-registro .formulario .password {
+    grid-column: 5/7;
+    padding: 0px 0px 20px 0px;
+}
+.container .cont-registro .formulario .repeat-password {
+    grid-column: 1/-1;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-registro .formulario .nombre p,
+.container .cont-registro .formulario .apellido p,
+.container .cont-registro .formulario .email p,
+.container .cont-registro .formulario .password p,
+.container .cont-registro .formulario .repeat-password p {
+    font-size: 18px;
+    padding: 0px 0px 10px 0px;
+}
+
+.container .cont-registro .formulario .nombre input,
+.container .cont-registro .formulario .apellido input,
+.container .cont-registro .formulario .email input,
+.container .cont-registro .formulario .password input,
+.container .cont-registro .formulario .repeat-password input {
+    font-size: 18px;
+    text-align: center;
+}
+
+.container .cont-registro .formulario .boton {
+    grid-column: 1/-1;
+    padding: 20px 0px 40px 0px;
+}
+
+.container .cont-registro .formulario .boton button {
+    color: white;
+    background-color: var(--orange);
+    padding: 6px 10px;
+    border: .3px solid var(--orange);
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.container .cont-registro .formulario .boton a {
+    color: white;
+    background-color: var(--orange);
+    padding: 6px 10px;
+    border: .3px solid var(--orange);
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.container .cont-registro .imagen {
+    grid-column: 1/-1;
+    background-color: white;
+    text-align: center;
+    border-top: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+
+/* ------------------------------------------------------------ */
+.container .cont-ver-mas {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-ver-mas .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.container .cont-ver-mas .titulo {
+    color: var(--orange);
+}
+
+.container .cont-ver-mas .row {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container .cont-ver-mas .row .col-img {
+    grid-column: 2/5;
+}
+
+.container .cont-ver-mas .row .col-img img {
+    max-width: 100%;
+    border-radius: 20px 0px 0px 20px;
+    opacity: .8;
+}
+
+.container .cont-ver-mas .row .col-texto {
+    grid-column: 5/8;
+    text-align: center;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.container .cont-ver-mas .row .col-texto .ingredientes {
+    grid-column: 1/-1;
+    padding: 60px 0px 0px 0px;
+}
+
+.container .cont-ver-mas .row .col-texto .ingredientes .titulo {
+    padding: 0px 0px 20px 0px;
+}
+
+
+.container .cont-ver-mas .row .col-texto .ingredientes .texto {
+    padding: 0px 40px 0px 40px;
+}
+
+.container .cont-ver-mas .row .col-texto .ingredientes .texto p {
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+    font-size: 17px;
+}
+
+.container .cont-ver-mas .row .col-texto .ingredientes .texto-informativo {
+    padding: 0px 40px 0px 40px;
+    text-align: center;
+}
+
+.container .cont-ver-mas .row .col-texto .ingredientes .texto-informativo p {
+    display: inline-block;
+    padding: 30px 20px 0px 0px;
+    font-size: 17px;
+}
+
+.container .cont-ver-mas .row .col-texto .cantidad {
+    grid-column: 1/4;
+    padding: 0px 0px 60px 0px;
+    text-align: center;
+}
+
+.container .cont-ver-mas .row .col-texto .cantidad .titulo {
+    grid-column: 1/4;
+    padding: 20px 0px 15px 0px;
+}
+
+.container .cont-ver-mas .row .col-texto .cantidad .titulo h1 {
+    color: black;
+}
+
+.container .cont-ver-mas .row .col-texto .cantidad .texto p {
+    font-size: 22px;
+}
+
+.container .cont-ver-mas .row .col-texto .instructor {
+    grid-column: 4/-1;
+    padding: 20px 0px 0px 0px;
+}
+
+.container .cont-ver-mas .row .col-texto .instructor .titulo {
+    grid-column: 1/4;
+    padding: 0px 0px 15px 0px;
+}
+
+.container .cont-ver-mas .row .col-texto .instructor .titulo h1 {
+    color: black;
+}
+
+.container .cont-ver-mas .row .col-texto .instructor .texto p {
+    font-size: 22px;
+}
+
+.container .cont-ver-mas .row .col-texto .boton {
+    grid-column: 1/-1;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    bottom: 30px;
+}
+
+.container .cont-ver-mas .row .col-texto .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+
+.container .cont-ver-mas .preparacion {
+    grid-column: 2/7;
+    margin: 0px 100px 0px 100px;
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+}
+
+.container .cont-ver-mas .preparacion .texto p {
+    font-size: 20px;
+}
+
+.container .cont-ver-mas .boton {
+    grid-column: 2/7;
+    text-align: center;
+    padding: 20px 0px 60px 0px;
+}
+
+.container .cont-ver-mas .boton a {
+    color: white;
+    background-color: var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------ */
+.container .cont-comentario {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-comentario .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.container .cont-comentario .titulo h1 {
+    color: var(--orange);
+}
+
+.container .cont-comentario .row {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container .cont-comentario .row .imagen {
+    grid-column: 2/5;
+}
+
+.container .cont-comentario .row .imagen img {
+    max-width: 100%;
+    opacity: .8;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.container .cont-comentario .row .descripcion {
+    grid-column: 5/8;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.container .cont-comentario .row .descripcion .titulo {
+    padding: 70px 0px 0px 0px;
+}
+
+.container .cont-comentario .row .descripcion .titulo h1 {
+    color: var(--orange);
+}
+
+
+.container .cont-comentario .row .descripcion .instructor {
+    text-align: center;
+}
+
+.container .cont-comentario .row .descripcion .instructor .titulo {
+    padding: 50px 0px 20px 0px;
+}
+
+.container .cont-comentario .row .descripcion .instructor .titulo h1 {
+    color: black;
+}
+
+.container .cont-comentario .row .descripcion .instructor .texto {
+    font-size: 25px;
+}
+
+.container .cont-comentario .comentario {
+    grid-column: 2/7;
+    text-align: center; 
+    background-color: white;
+    margin: 20px 0px 0px 0px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.container .cont-comentario .comentario .nombre {
+    padding: 10px 0px 10px 0px;
+}
+
+.container .cont-comentario .comentario .nombre span {
+    color: var(--orange);
+}
+
+.container .cont-comentario .comentario .descripcion {
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-comentario .comentario .btn-comentario {
+    padding: 0px 0px 10px 0px;
+}
+
+.container .cont-comentario .comentario .btn-comentario button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.container .cont-comentario .comentario .btn-comentario a {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.container .cont-comentario .comentario .fecha {
+    text-align: right;
+}
+
+.container .cont-comentario .comentario .fecha span {
+    color: var(--orange);
+}
+
+.container .cont-comentario .boton {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 50px 0px 30px 0px;
+}
+
+.container .cont-comentario .boton a {
+    color: white;
+    background-color: var(--orange);
+    padding: 6px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* ---------------------------------------------------- */
+/* --------------- ADMINISTRADOR ---------------------- */
+
+.container .cont-anadir-rec {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-anadir-rec .titulo {
+    grid-column: 1/-1;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-anadir-rec .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.container .cont-anadir-rec .formulario {
+    grid-column: 1/-1;
+}
+
+.container .cont-anadir-rec .formulario .foto {
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-anadir-rec .formulario .titulo {
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-anadir-rec .formulario .descripcion {
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-anadir-rec .formulario .cant-persona {
+    padding: 30px 0px 0px 0px;
+}
+
+
+.container .cont-anadir-rec .formulario .tipo-receta {
+    padding: 30px 0px 0px 0px;
+}
+
+
+.container .cont-anadir-rec .formulario .boton{
+    padding: 30px 0px 30px 0px;
+}
+
+.container .cont-anadir-rec .formulario .imagen {
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-anadir-rec .formulario .foto p,
+.container .cont-anadir-rec .formulario .titulo p,
+.container .cont-anadir-rec .formulario .descripcion p,
+.container .cont-anadir-rec .formulario .cant-persona p,
+.container .cont-anadir-rec .formulario .tipo-receta p {
+    padding: 0px 0px 5px 0px;
+    font-weight: bold;
+}
+
+.container .cont-anadir-rec .formulario .titulo input {
+    width: 170px;
+    height: 23px;
+    text-align: center;
+}
+
+.container .cont-anadir-rec .formulario .cant-persona input {
+    width: 50px;
+    height: 23px;
+    text-align: center;
+}
+
+.container .cont-anadir-rec .formulario .tipo-receta select {
+    width: 170px;
+    height: 26px;
+}
+
+.container .cont-anadir-rec .formulario .descripcion textarea {
+    text-align: center;
+}
+
+.container .cont-anadir-rec .formulario .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+
+.container .cont-anadir-rec .formulario .boton a {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.container .cont-anadir-rec .imagen {
+    grid-column: 1/-1;
+    text-align: center;
+    border: 50px 0px 0px 0px;
+    background-color: white;
+    border-top: 2px solid var(--orange);
+    border-bottom: 2px solid var(--orange);
+}
+
+/* -------------------------------------------------- */
+.container .cont-anadir-prod {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-anadir-prod .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-anadir-prod .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+
+.container .cont-anadir-prod .formulario {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-anadir-prod .formulario .nombre {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.container .cont-anadir-prod .formulario .nombre input {
+    width: 150px;
+    height: 23px;
+    text-align: center;
+}
+
+.container .cont-anadir-prod .formulario .uni-medida {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-anadir-prod .formulario .uni-medida .cantidad  {
+    grid-column: 4/5;
+    text-align: center;
+    padding: 0px 0px 0px 125px;
+}
+
+.container .cont-anadir-prod .formulario .uni-medida .cantidad input {
+    width: 80px;
+    height: 24px;
+    text-align: center;
+}
+
+.container .cont-anadir-prod .formulario .uni-medida .medida  {
+    grid-column: 5/6;
+    text-align: center;
+    padding: 0px 125px 0px 0px;
+}
+
+.container .cont-anadir-prod .formulario .uni-medida .medida select {
+    width: 100px;
+    height: 28px;
+}
+
+.container .cont-anadir-prod .formulario .nombre p,
+.container .cont-anadir-prod .formulario .uni-medida .cantidad p,
+.container .cont-anadir-prod .formulario .uni-medida .medida p {
+    padding: 0px 0px 5px 0px;
+}
+
+.container .cont-anadir-prod .formulario .boton  {
+    grid-column: 1/-1;
+    padding: 30px 0px 30px 0px;
+}
+
+.container .cont-anadir-prod .formulario .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+.container .cont-anadir-prod .formulario .boton a {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.container .cont-anadir-prod .formulario .descripcion {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 20px 0px 0px 0px;
+}
+
+.container .cont-anadir-prod .formulario .descripcion .caloria {
+    grid-column: 4/5;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-anadir-prod .formulario .descripcion .carbohidrato {
+    grid-column: 5/6;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-anadir-prod .formulario .descripcion .proteina {
+    grid-column: 4/5;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-anadir-prod .formulario .descripcion .grasa {
+    grid-column: 5/6;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-anadir-prod .formulario .descripcion .colesterol {
+    grid-column: 3/7;
+    text-align: center;
+}
+
+.container .cont-anadir-prod .formulario .descripcion .caloria input,
+.container .cont-anadir-prod .formulario .descripcion .carbohidrato input,
+.container .cont-anadir-prod .formulario .descripcion .proteina input,
+.container .cont-anadir-prod .formulario .descripcion .grasa input,
+.container .cont-anadir-prod .formulario .descripcion .colesterol input {
+    width: 100px;
+    height: 20px;
+}
+
+
+.container .cont-anadir-prod .listado {
+    grid-column: 3/6;
+    text-align: center;
+    border: 1px solid var(--orange);
+    margin: 30px 0px 30px 0px;
+}
+
+.container .cont-anadir-prod .listado tr th {
+    border: 1px solid var(--orange);
+    color:  var(--orange);
+}
+.container .cont-anadir-prod .listado tr td {
+    border: 1px solid var(--orange);
+}
+
+.container .cont-anadir-prod .listado tr td a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container .cont-anadir-prod .listado tr td button {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+/* ----------------------------------------------------- */
+.container .cont-administrar {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-administrar .titulo {
+    grid-column: 1/-1;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-administrar .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.container .cont-administrar .boton {
+    grid-column: 1/-1;
+    padding: 20px 0px 0px 0px;
+}
+
+.container .cont-administrar .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.container .cont-administrar .act-receta {
+    grid-column: 1/-1;
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-administrar .act-receta .titulo {
+    grid-column: 1/-1;
+    padding: 0px 0px 0px 0px;
+}
+
+.container .cont-administrar .act-receta .imagen {
+    grid-column: 1/-1;
+    padding: 20px 0px 20px 0px;
+}
+
+.container .cont-administrar .act-receta .nombre {
+    grid-column: 1/-1;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-administrar .act-receta .cant-persona {
+    grid-column: 1/-1;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-administrar .act-receta .descripcion {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.container .cont-administrar .act-receta .imagen p,
+.container .cont-administrar .act-receta .nombre p,
+.container .cont-administrar .act-receta .cant-persona p,
+.container .cont-administrar .act-receta .recomendada p,
+.container .cont-administrar .act-receta .descripcion p {
+    padding: 0px 0px 5px 0px;
+}
+
+.container .cont-administrar .act-receta .nombre input,
+.container .cont-administrar .act-receta .cant-persona input {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+
+.container .cont-administrar .act-receta .descripcion textarea {
+    text-align: center;
+}
+
+.container .cont-administrar .act-receta .boton a {
+    font-size: 17px;
+}
+
+/* ---- */
+.container .cont-administrar .producto {
+    grid-column: 1/-1;
+    padding: 0px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-administrar .producto .titulo {
+    grid-column: 1/-1;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-administrar .producto .boton {
+    grid-column: 4/7;
+    text-align: center;
+    padding: 20px 0px 0px 100px;
+}
+
+.container .cont-administrar .producto .boton a {
+    color: white;
+    background-color: var(--orange);
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.container .cont-administrar .producto .nombre {
+    grid-column: 1/-1;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-administrar .producto .table {
+    grid-column: 3/6;
+    margin: 20px 0px 30px 0px;
+    border: 1px solid var(--orange);
+}
+
+.container .cont-administrar .producto .table tr th {
+    border: 1px solid var(--orange);
+    color: var(--orange);
+}
+
+.container .cont-administrar .producto .table tr td {
+    border: 1px solid var(--orange);
+}
+
+.container .cont-administrar .producto .table tr td a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container .cont-administrar .producto .table tr td button {
+    color: var(--orange);
+    background-color: transparent;
+    border: .3px solid transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ----- */
+.container .cont-administrar .act-producto {
+    grid-column: 1/-1;
+    padding: 0px 0px 0px 0px;
+}
+
+.container .cont-administrar .act-producto .titulo {
+    grid-column: 1/-1;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-administrar .act-producto .nombre {
+    grid-column: 1/-1;
+    padding: 20px 0px 0px 0px;
+}
+
+.container .cont-administrar .act-producto .uni-medida {
+    grid-column: 1/-1;
+    padding: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container .cont-administrar .act-producto .uni-medida .cantidad {
+    grid-column: 4/5;
+    padding: 0px 0px 0px 125px;
+}
+
+.container .cont-administrar .act-producto .uni-medida .medida {
+    grid-column: 5/6;
+    padding: 0px 125px 0px 0px;
+}
+
+.container .cont-administrar .act-producto .nombre input {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+.container .cont-administrar .act-producto .uni-medida .cantidad input {
+    width: 80px;
+    height: 24px;
+    text-align: center;
+}
+
+.container .cont-administrar .act-producto .uni-medida .medida select {
+    width: 100px;
+    height: 28px;
+}
+
+.container .cont-administrar .reg-producto {
+    grid-column: 1/-1;
+}
+
+
+.container .cont-administrar .reg-producto .nombre {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.container .cont-administrar .reg-producto .nombre input {
+    width: 150px;
+    height: 23px;
+    text-align: center;
+}
+
+.container .cont-administrar .reg-producto .uni-medida {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-administrar .reg-producto .uni-medida .cantidad  {
+    grid-column: 4/5;
+    text-align: center;
+    padding: 0px 0px 0px 125px;
+}
+
+.container .cont-administrar .reg-producto .uni-medida .cantidad input {
+    width: 80px;
+    height: 24px;
+    text-align: center;
+}
+
+.container .cont-administrar .reg-producto .uni-medida .medida  {
+    grid-column: 5/6;
+    text-align: center;
+    padding: 0px 125px 0px 0px;
+}
+
+.container .cont-administrar .reg-producto .uni-medida .medida select {
+    width: 100px;
+    height: 28px;
+}
+
+.container .cont-administrar .reg-producto .nombre p,
+.container .cont-administrar .reg-producto .uni-medida .cantidad p,
+.container .cont-administrar .reg-producto .uni-medida .medida p {
+    padding: 0px 0px 5px 0px;
+}
+
+.container .cont-administrar .reg-producto .boton  {
+    grid-column: 1/-1;
+    padding: 30px 0px 30px 0px;
+}
+
+.container .cont-administrar .reg-producto .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+.container .cont-administrar .reg-producto .boton a {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.container .cont-administrar .reg-producto .descripcion {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 20px 0px 0px 0px;
+}
+
+.container .cont-administrar .reg-producto .descripcion .caloria {
+    grid-column: 4/5;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-administrar .reg-producto .descripcion .carbohidrato {
+    grid-column: 5/6;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-administrar .reg-producto .descripcion .proteina {
+    grid-column: 4/5;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-administrar .reg-producto .descripcion .grasa {
+    grid-column: 5/6;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-administrar .reg-producto .descripcion .colesterol {
+    grid-column: 3/7;
+    text-align: center;
+}
+
+.container .cont-administrar .reg-producto .descripcion .caloria input,
+.container .cont-administrar .reg-producto .descripcion .carbohidrato input,
+.container .cont-administrar .reg-producto .descripcion .proteina input,
+.container .cont-administrar .reg-producto .descripcion .grasa input,
+.container .cont-administrar .reg-producto .descripcion .colesterol input {
+    width: 100px;
+    height: 20px;
+}
+
+
+
+
+.container .cont-administrar .boton a {
+    color: white;
+    background-color: var(--orange);
+    padding: 6px 10px;
+    border: .3px solid var(--orange);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* ---------- CLIENTE ----------------- */
+.container .cont-inventario {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-inventario .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+
+.container .cont-inventario .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.container .cont-inventario .boton {
+    grid-column: 5/7;
+    padding: 20px 140px 0px 0px;
+    text-align: center;
+}
+
+.container .cont-inventario .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.container .cont-inventario .table {
+    grid-column: 3/6;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    border: 1px solid var(--orange);
+}
+
+.container .cont-inventario .table tr th {
+    border: 1px solid var(--orange);
+    color: var(--orange);
+}
+
+.container .cont-inventario .table tr td {
+    border: 1px solid var(--orange);
+}
+
+.container .cont-inventario .table tr td button {
+    background-color: transparent;
+    border: none;
+    color: var(--orange);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.container .cont-inventario .table tr td a {
+    color: var(--orange);
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.container .cont-inventario .anadir-producto {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-inventario .anadir-producto .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-inventario .anadir-producto .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+
+.container .cont-inventario .anadir-producto .formulario {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-inventario .anadir-producto .formulario .nombre {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.container .cont-inventario .anadir-producto .formulario .nombre input {
+    width: 150px;
+    height: 23px;
+    text-align: center;
+}
+
+.container .cont-inventario .anadir-producto .formulario .uni-medida {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-inventario .anadir-producto .formulario .uni-medida .cantidad  {
+    grid-column: 4/5;
+    text-align: center;
+    padding: 0px 0px 0px 125px;
+}
+
+.container .cont-inventario .anadir-producto .formulario .uni-medida .cantidad input {
+    width: 80px;
+    height: 24px;
+    text-align: center;
+}
+
+.container .cont-inventario .anadir-producto .formulario .uni-medida .medida  {
+    grid-column: 5/6;
+    text-align: center;
+    padding: 0px 125px 0px 0px;
+}
+
+.container .cont-inventario .anadir-producto .formulario .uni-medida .medida select {
+    width: 100px;
+    height: 28px;
+}
+
+.container .cont-inventario .anadir-producto .formulario .nombre p,
+.container .cont-inventario .anadir-producto .formulario .uni-medida .cantidad p,
+.container .cont-inventario .anadir-producto .formulario .uni-medida .medida p {
+    padding: 0px 0px 5px 0px;
+}
+
+.container .cont-inventario .anadir-producto .formulario .boton  {
+    grid-column: 1/-1;
+    padding: 30px 0px 30px 0px;
+}
+
+.container .cont-inventario .anadir-producto .formulario .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+.container .cont-inventario .anadir-producto .formulario .boton a {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.container .cont-inventario .mod-producto {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-inventario .mod-producto .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-inventario .mod-producto .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+
+.container .cont-inventario .mod-producto .formulario {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.container .cont-inventario .mod-producto .formulario .nombre {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.container .cont-inventario .mod-producto .formulario .nombre input {
+    width: 150px;
+    height: 23px;
+    text-align: center;
+}
+
+.container .cont-inventario .mod-producto .formulario .uni-medida {
+    grid-column: 1/-1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-inventario .mod-producto .formulario .uni-medida .cantidad  {
+    grid-column: 4/5;
+    text-align: center;
+    padding: 0px 0px 0px 125px;
+}
+
+.container .cont-inventario .mod-producto .formulario .uni-medida .cantidad input {
+    width: 80px;
+    height: 24px;
+    text-align: center;
+}
+
+.container .cont-inventario .mod-producto .formulario .uni-medida .medida  {
+    grid-column: 5/6;
+    text-align: center;
+    padding: 0px 125px 0px 0px;
+}
+
+.container .cont-inventario .mod-producto .formulario .uni-medida .medida select {
+    width: 100px;
+    height: 28px;
+}
+
+.container .cont-inventario .mod-producto .formulario .nombre p,
+.container .cont-inventario .mod-producto .formulario .uni-medida .cantidad p,
+.container .cont-inventario .mod-producto .formulario .uni-medida .medida p {
+    padding: 0px 0px 5px 0px;
+}
+
+.container .cont-inventario .mod-producto .formulario .boton  {
+    grid-column: 1/-1;
+    padding: 30px 0px 30px 0px;
+}
+
+.container .cont-inventario .mod-producto .formulario .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+.container .cont-inventario .mod-producto .formulario .boton a {
+    color: white;
+    background-color: var(--orange);
+    border: .3px solid var(--orange);
+    padding: 6px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+.container .cont-inventario .anadir-producto .listado {
+    grid-column: 3/6;
+    text-align: center;
+    border: 1px solid var(--orange);
+    margin: 10px 0px 0px 0px;
+}
+
+.container .cont-inventario .anadir-producto .listado tr th {
+    border: 1px solid var(--orange);
+    color:  var(--orange);
+}
+.container .cont-inventario .anadir-producto .listado tr td {
+    border: 1px solid var(--orange);
+}
+
+.container .cont-inventario .anadir-producto .listado tr td a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------ */
+.container .cont-ana-fav {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.container .cont-ana-fav .titulo {
+    padding: 30px 0px 0px 0px;
+}
+
+.container .cont-ana-fav .titulo h1 {
+    color: var(--orange);
+    font-size: 35px;
+}
+
+.container .cont-ana-fav .calcular {
+    padding: 20px 0px 0px 0px;
+}
+
+.container .cont-ana-fav .calcular .cantidad p {
+    padding: 0px 0px 10px 0px;
+    font-size: 17px;
+}
+
+.container .cont-ana-fav .calcular .cantidad input {
+    text-align: center;
+    width: 80px;
+    height: 25px;
+}
+
+.container .cont-ana-fav .calcular .cantidad button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.container .cont-ana-fav .receta {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container .cont-ana-fav .receta .titulo {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.container .cont-ana-fav .receta .table-receta {
+    grid-column: 3/7;
+    text-align: center;
+    border: 2px solid var(--orange);
+    margin: 25px 0px 0px 0px;
+}
+
+.container .cont-ana-fav .receta .table-receta tr th {
+    border: 1px solid var(--orange);
+}
+
+.container .cont-ana-fav .receta .table-receta tr td {
+    border: 1px solid var(--orange);
+}
+
+
+.container .cont-ana-fav .receta .producto {
+    grid-column: 1/-1;
+    padding: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.container .cont-ana-fav .receta .producto .search {
+    grid-column: 3/7;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-ana-fav .receta .producto .search p {
+    padding: 0px 0px 5px 0px;
+    font-size: 17px;
+}
+
+.container .cont-ana-fav .receta .producto .search select {
+    width: 120px;
+    height: 23px;
+}
+
+.container .cont-ana-fav .receta .producto .boton {
+    grid-column: 4/7;
+    padding: 0px 0px 20px 0px;
+}
+
+.container .cont-ana-fav .receta .producto .boton a {
+    color: white;
+    background-color: var(--orange);
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    left: 30px;
+    font-size: 14px;
+}
+
+.container .cont-ana-fav .receta .producto .table-producto {
+    grid-column: 4/6;
+    border: 2px solid var(--orange);
+}
+
+.container .cont-ana-fav .receta .producto .table-producto tr th {
+    border: 1px solid var(--orange);
+}
+
+.container .cont-ana-fav .receta .producto .table-producto tr td {
+    border: 1px solid var(--orange);
+}
+
+.container .cont-ana-fav .receta .producto .table-producto tr td a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.container .cont-ana-fav .receta .boton {
+    grid-column: 1/-1;
+    padding: 40px 0px 0px 0px;
+}
+
+.container .cont-ana-fav .receta .boton button {
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    position: relative;
+    right: 2px;
+}
+
+.container .cont-ana-fav .receta .boton a {
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    position: relative;
+    left: 2px;
+    text-decoration: none;
+}

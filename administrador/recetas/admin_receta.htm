@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="cont-menu">
+            <div class="imagen">
+                <img src="../../static/img/logotipo.png" alt="logotipo">
+            </div>
+            <ul class="menu">
+                <li><a href="../recetas.htm">Mis Recetas</a></li>
+                <li><a href="../../login.htm">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+        <div class="cont-administrar">
+            <div class="titulo">
+                <h1>Administrar Receta</h1>
+            </div>
+            <div class="boton">
+                <button id="btn-receta">Receta</button>
+                <button id="btn-producto">Productos</button>
+            </div>
+            <form class="act-receta">
+                <div class="titulo">
+                    <h1>Receta</h1>
+                </div>
+                <div class="imagen">
+                    <p>Actualizar Imagen</p>
+                    <input type="file" name="ftImagen">
+                </div>
+                <div class="nombre">
+                    <p>Actualizar Nombre</p>
+                    <input type="text" name="txtNombre">
+                </div>
+                <div class="cant-persona">
+                    <p>Actualizar Cantidad</p>
+                    <input type="text" name="txtCantidad">
+                </div>
+                <div class="descripcion">
+                    <p>Actualizar Receta</p>
+                    <textarea name="txtDecription" cols="50" rows="8"></textarea>
+                </div>
+                <div class="boton">
+                    <button>Actualizar Receta</button>
+                    <a href="">Eliminar Receta</a>
+                </div>
+            </form>
+            <form action="" class="act-producto">
+                <div class="titulo">
+                    <h1>Actualizar Producto</h1>
+                </div>
+                <div class="nombre">
+                    <p>Actualizar Nombre</p>
+                    <input type="text" name="txtNombre">
+                </div>
+                <div class="uni-medida">
+                    <div class="cantidad">
+                        <p>Cantidad</p>
+                        <input type="text" name="txtCantidad">
+                    </div>
+                    <div class="medida">
+                        <p>Medida</p>
+                        <select name="cboMedida">
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="boton">
+                    <button>Actualizar Producto</button>
+                </div>
+            </form>
+            <form action="" class="reg-producto">
+                <div class="titulo">
+                    <h1>Registrar Producto</h1>
+                </div>
+                <div class="nombre">
+                    <p>Especifique su Nombre</p>
+                    <input type="text" name="txtNombre">
+                </div>
+                <div class="uni-medida">
+                    <div class="cantidad">
+                        <p>Cantidad</p>
+                        <input type="text" name="txtCantidad">
+                    </div>
+                    <div class="medida">
+                        <p>Medida</p>
+                        <select name="cboMedida">
+                            <option value="">Seleccionar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <div class="caloria">
+                        <p>Calorías</p>
+                        <input type="text" name="txtCaloria">
+                    </div>
+                    <div class="carbohidrato">
+                        <p>Carbohidratos</p>
+                        <input type="text" name="txtCarbohidratos">                    
+                    </div>
+                    <div class="proteina">
+                        <p>Proteínas</p>
+                        <input type="text" name="txtProteina">
+                    </div>
+                    <div class="grasa">
+                        <p>Grasa</p>
+                        <input type="text" name="txtGrasa">
+                    </div>
+                    <div class="colesterol">
+                        <p>Colesterol</p>
+                        <input type="text" name="txtColesterol">
+                    </div>
+                </div>
+                <div class="boton">
+                    <button>Añadir</button>
+                </div>
+            </form>
+            <div class="producto">
+                <div class="titulo">
+                    <h1>Productos</h1>
+                </div>
+                <div class="nombre">
+                    <h2>POLLO A LA PLANCHA C/N ARROZ INTEGRAL</h2>
+                </div>
+                <div class="boton">
+                    <button id="btn-agregar">Agregar Producto</button>
+                </div>
+                <table class="table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Calorías</th>
+                        <th>Carbohidratos</th>
+                    </tr>
+                    <tr>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                    </tr>
+                    <tr>
+                        <th>Proteínas</th>
+                        <th>Grasa</th>
+                        <th>Colesterol</th>
+                        <th>Administrar</th>
+                    </tr>
+                    <tr>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td style="display: grid; grid-template-columns: repeat(2, 1fr)"><a href="">Eliminar</a><button id="btn-modificar">Modificar</button></td>
+                    </tr>
+                </table>
+                <table class="table">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Calorías</th>
+                        <th>Carbohidratos</th>
+                    </tr>
+                    <tr>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                    </tr>
+                    <tr>
+                        <th>Proteínas</th>
+                        <th>Grasa</th>
+                        <th>Colesterol</th>
+                        <th>Administrar</th>
+                    </tr>
+                    <tr>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td>hola</td>
+                        <td style="display: grid; grid-template-columns: repeat(2, 1fr)"><a href="">Eliminar</a><button>Modificar</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="boton">
+                <a href="../recetas.htm">Volver a Mis Recetas</a>
+            </div>
+        </div>
+    </div>
+    <script src="../../static/js/jquery-3.1.4.min.js"></script>
+    <script src="../../static/js/code.js"></script>
+</body>
+</html>
